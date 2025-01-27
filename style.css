@@ -50,7 +50,7 @@
   .name,.name-ar {
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    gap: 3px;
     flex-direction: column;
   }
   
