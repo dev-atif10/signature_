@@ -48,7 +48,8 @@
   
   
   .name,.name-ar {
-  text-align: left;
+    display: flex;
+    align-items: flex-start;
   }
   
   .name p,
