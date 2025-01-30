@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Signature</title>
+    <style>
+        /* Reset styles for email clients */
+        body, table, td, p, a, img {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        
+        /* Base container styles */
+        .signature-container {
+            width: 500px;
+            max-width: 100%;
+            background-color: #000000;
+            border-radius: 20px;
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+        }
+
+        /* Content wrapper */
+        .content-wrapper {
+            padding: 20px;
+            display: table;
+            width: 100%;
+        }
+
+        /* Text styles */
+        .name {
+            font-size: .8em;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.72);
+            margin: 0;
+        }
+
+        /* Contact info */
+        .contact-info {
+            font-size: 14px;
+            color: #ffffff;
+            text-align: right;
+            line-height: 1.4;
+        }
+
+        /* Social icons */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+            background: #ffffff;
+            padding: 5px;
+            border-radius: 3px;
+            line-height: 0;
+        }
+
+        .social-icons img {
+            max-width: 15px;
+            max-height: 15px;
+            vertical-align: middle;
+        }
+
+        /* Logo styles */
+        .logo-container {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: right;
+            padding-left: 20px;
+        }
+
+        .logo {
+            max-width: 100px;
+            height: auto;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 520px) {
+            .signature-container {
+                width: 100% !important;
+                border-radius: 0;
+            }
+            
+            .content-wrapper {
+                display: block;
+                padding: 10px;
+            }
+
+            .name {
+                font-size: .7em;
+                margin-bottom: 2px;
+            }
+
+            .title {
+                font-size: 12px;
+            }
+
+            .social-icons {
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .social-icons a {
+                margin: 0 5px;
+            }
+
+            .logo-container {
+                display: block;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            .logo {
+                max-width: 80px;
+            }
+
+            .contact-info {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            /* Adjust layout for smaller screens */
+            .content-wrapper table {
+                width: 100% !important;
+            }
+
+            .content-wrapper td {
+                display: block;
+                width: 100% !important;
+                text-align: center !important;
+                padding: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table class="signature-container" role="presentation" cellspacing="0" cellpadding="0" style="direction:ltr;">
+        <tr>
+            <td>
+                <table class="content-wrapper" role="presentation" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <!-- Personal Information -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td style="width: 50%;">
+                                        <p class="name">Eng.Suad Alharbi</p>
+                                        <p class="title">CEO</p>
+                                    </td>
+                                    <td style="width: 50%; text-align: right;">
+                                        <p class="name">م/ سعود الحربي</p>
+                                        <p class="title">الرئيس التنفيذي</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Contact and Social -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" width="100%" style="margin-top: 20px;">
+                                <tr>
+                                    <td class="social-icons">
+                                        <a href="https://www.instagram.com/zimam_company.sa" aria-label="Instagram">
+                                            <img src="assets/instagram.png" alt="Instagram">
+                                        </a>
+                                        <a href="https://zimam.sa" aria-label="Website">
+                                            <img src="assets/world-wide-web.png" alt="Website">
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/zimam-company/" aria-label="LinkedIn">
+                                            <img src="assets/linkedin-big-logo.png" alt="LinkedIn">
+                                        </a>
+                                        <a href="https://x.com/zimam_s" aria-label="X (Twitter)">
+                                            <img src="assets/twitter.png" alt="X">
+                                        </a>
+                                    </td>
+                                    <td class="contact-info">
+                                        <p>0562030099</p>
+                                        <p>Suad@zimam.sa</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        
+                        <!-- Logo -->
+                        <td class="logo-container">
+                            <img class="logo" src="assets/LogoWhite.gif" alt="Zimam Logo">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
